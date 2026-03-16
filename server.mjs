@@ -1,3 +1,5 @@
+console.log("NEW TAROT SERVER");
+
 import express from "express";
 import OpenAI from "openai";
 
