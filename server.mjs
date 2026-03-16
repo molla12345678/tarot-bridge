@@ -97,14 +97,12 @@ ${cards[0]}, ${cards[1]}, ${cards[2]}
 
     const text = response.output_text.trim();
 
-    const reply =
-`🔮 질문 타로
+    const text = response.output_text.trim();
 
-🃏 카드 : ${cards.join(" / ")}
-
-${text}`;
-
-    res.json({reply});
+res.json({
+  cards: cards,
+  text: text
+});
 
   }catch(err){
 
